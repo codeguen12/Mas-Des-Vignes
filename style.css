@@ -1,0 +1,232 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+    color: #fffae1;
+}
+/* ....................barre de navigation................ */
+nav{
+    overflow: hidden;
+    background-color: #669999;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+header li{
+    float: right;
+    font-size: 1.2em;
+}
+header li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+#logo{
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    float: left;
+}
+/*................image principal...............*/
+#imageprincipal{
+    padding-top: 60px;
+    background: url(media/image-principale.JPG) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1{
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    color: #FFE3AA;
+    font-size: 6em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+}
+#premierTrait{
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #FFE3AA;
+    box-shadow: 1px 3px 2px black;
+}
+h3{
+    text-align: center;
+    color: #FFE3AA;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+}
+/* ................présentation............. */
+#présentation{
+    background-color: #FFE3AA;
+    padding: 10px 0px 100px 0px;
+
+}
+#textIntro{
+    padding: 0px 20%;
+}
+#préstations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.imagePréstations h4{
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300;
+}
+.imagePréstations img{
+    border-radius: 10px;
+    box-shadow: 9px 8px 9px 0px rgba(0,0,0,0.79);
+}
+.imagePréstations:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.8s ease-in-out;
+}
+/* ...........................tourisme...................... */
+#tourisme{
+    color: #fffae1;
+    height: 1400px;
+    background-color: #D4B16A;
+    padding: 1px 2%;
+}
+#tourisme h2{
+    padding-top: 60px;
+}
+#plage{
+    background-image: url(media/plage.jpg);
+}
+#salines{
+    background-image: url(media/Salines.JPG);
+}
+#cathedrale{
+    background-image: url(media/cathedrale.JPG);
+}
+#vignoble{
+    background-image: url(media/vignes.jpg);
+}
+#tourisme li {
+    margin: 65px 100px 0px 100px;
+    height: 226px;
+    width: 55%;
+    max-width: 550px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+#tourisme p {
+    height: 45px;
+    width: 235px;
+    background-color: #226666;
+    float: right;
+    margin: 50px -180px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 1px #003333;
+}
+#tourisme #salines, #tourisme #vignoble{
+    float: right;
+
+}
+#salines p, #vignoble p{
+    float: left;
+    background-color: #AA3939;
+    margin-left: -180px;
+    box-shadow: -4px 4px 0 1px #550000; 
+}
+/* .....................section contacte................ */
+footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #553900;
+    color: #FFE3AA;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+/* ......................formulaire de contacte.................*/
+#formulaire{
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 30px;
+}
+input, textarea, #Envoyer {
+    border: none;
+    width: 70%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px;
+} 
+textarea{
+    height: 120px;
+}
+footer #Envoyer{
+    font-size: 1.5em;
+    background-color: #fffae1;
+}
+footer #Envoyer:hover{
+    background-color: #AA3939;
+    color: #fffae1;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+}
+
+#deuxiemeTrait{
+    height: 1px;
+    width: 75%;
+    background-color: #fffae1;
+    margin: 60px auto;
+}
+/*........................liens vers reseaux socieaux................*/
+#copyrightetIcon {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright{
+    width: 50%;
+    text-align: left;
+    color: #fffae1;
+}
+#icons{
+    width: 50%;
+    text-align: right;
+}
+#icons a{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: #fffae1;
+}
+#icons a:hover{
+    transform: scale(1.5);
+    transition: 0.1s;
+}
